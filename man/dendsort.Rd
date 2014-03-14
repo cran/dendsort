@@ -2,7 +2,7 @@
 \alias{dendsort}
 \title{Sorting and reordering dendrogram nodes.}
 \usage{
-dendsort(d, isReverse = FALSE, byAverage = TRUE)
+dendsort(d, isReverse = FALSE, type = "min")
 }
 \arguments{
   \item{d}{a dendrogram or hclust object.\code{d}}
@@ -10,9 +10,8 @@ dendsort(d, isReverse = FALSE, byAverage = TRUE)
   \item{isReverse}{logical indicating if the order should
   be reversed.Defaults to FALSE\code{isReverse}}
 
-  \item{byAverage}{logical indicating if sorted by average
-  distance (if TRUE), or by smallest distance (if FALSE).
-  \code{byAverage}}
+  \item{type}{character indicating the type of sorting.
+  Default to "min" \code{type}}
 }
 \value{
 output A sorted dendrogram or hclust.
@@ -45,8 +44,8 @@ hc_sorted  <- as.hclust(dd)
 #sort in reverse, you can also pass hclust object
 plot(dendsort(hc, isReverse=TRUE))
 
-#sort by smallest distance
-plot(dendsort(hc, byAverage=FALSE))
+#sort by average distance
+plot(dendsort(hc, type="average"))
 
 #plot the result
 par(mfrow = c(1, 3), mai=c(0.8,0.8,2,0.8))

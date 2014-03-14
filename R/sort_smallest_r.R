@@ -32,8 +32,8 @@
 #' #sort in reverse, you can also pass hclust object
 #' plot(dendsort(hc, isReverse=TRUE))
 #' 
-#' #sort by smallest distance
-#' plot(dendsort(hc, byAverage=FALSE))
+#' #sort by average distance
+#' plot(dendsort(hc, type="average"))
 #' 
 #' #plot the result
 #' par(mfrow = c(1, 3), mai=c(0.8,0.8,2,0.8))

@@ -11,7 +11,7 @@
 #'
 #' @param d a dendrogram or hclust object.\code{d}
 #' @param isReverse logical indicating if the order should be reversed.Defaults to FALSE\code{isReverse}
-#' @param byAverage logical indicating if sorted by average distance (if TRUE), or by smallest distance (if FALSE). \code{byAverage}
+#' @param type character indicating the type of sorting. Default to "min" \code{type}
 #'
 #' @return output A sorted dendrogram or hclust. 
 #'
@@ -37,8 +37,8 @@
 #' #sort in reverse, you can also pass hclust object
 #' plot(dendsort(hc, isReverse=TRUE))
 #' 
-#' #sort by smallest distance
-#' plot(dendsort(hc, byAverage=FALSE))
+#' #sort by average distance
+#' plot(dendsort(hc, type="average"))
 #' 
 #' #plot the result
 #' par(mfrow = c(1, 3), mai=c(0.8,0.8,2,0.8))
@@ -48,17 +48,20 @@
 #' plot(hc_sorted, main="after sorting", xlab="", sub="")
 #' 
 
-dendsort <- function(d, isReverse=FALSE, byAverage=TRUE) {
+dendsort <- function(d, isReverse=FALSE, type="min") {
   if(class(d)!="dendrogram" && class(d)!= "hclust"){
     stop("d variable must be a dendrogram or hclust object")
   }
+  #type string to lower case
+  type = tolower(type)
+
   #assign dendrogram
   dend = d
   if(class(d)=="hclust"){
     dend = as.dendrogram(d)
   }
   
-  if(byAverage){
+  if(type=="average"){
     #sort by average distance
     if(isReverse){
       #sort in reverse
@@ -67,13 +70,15 @@ dendsort <- function(d, isReverse=FALSE, byAverage=TRUE) {
       #sort in left to right order 
       n = sort_average(dend)
     }
-  }else{
+  }else if(type == "min"){
     #sort by smallest distance
     if(isReverse){
       n = sort_smallest_r(dend)
     }else{
       n = sort_smallest(dend)
     }
+  }else{
+    stop("unrecognized type variable "+type)
   }
   
   #if input was a hclust object, convert it back to hclust
