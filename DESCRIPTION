@@ -1,8 +1,8 @@
 Package: dendsort
 Type: Package
 Title: Sorting and reordering dendrogram nodes.
-Version: 0.2.0
-Date: 2014-03-14
+Version: 0.2.1
+Date: 2014-06-17
 Author: Ryo Sakai
 Maintainer: Ryo Sakai <ryo.sakai@esat.kuleuven.be>
 Description: This package includes functions to optimize ordering of nodes in a dendrogram,
@@ -14,7 +14,7 @@ Description: This package includes functions to optimize ordering of nodes in a 
     introduces more meaningful reordering for a coupled heatmap visualization.
 License: GPL-2 | GPL-3
 URL: https://bitbucket.org/biovizleuven/dendsort/
-Packaged: 2014-03-14 10:18:25 UTC; Ryo
+Packaged: 2014-06-17 17:54:12 UTC; Ryo
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-03-14 11:32:41
+Date/Publication: 2014-06-17 21:16:19

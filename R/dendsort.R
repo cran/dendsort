@@ -49,7 +49,8 @@
 #' 
 
 dendsort <- function(d, isReverse=FALSE, type="min") {
-  if(class(d)!="dendrogram" && class(d)!= "hclust"){
+  if(!inherits(d, "dendrogram") && !inherits(d, "hclust")){
+  #if(class(d)!="dendrogram" && class(d)!= "hclust"){
     stop("d variable must be a dendrogram or hclust object")
   }
   #type string to lower case
@@ -57,8 +58,8 @@ dendsort <- function(d, isReverse=FALSE, type="min") {
 
   #assign dendrogram
   dend = d
-  if(class(d)=="hclust"){
-    dend = as.dendrogram(d)
+  if(inherits(d, "hclust")){
+   dend = as.dendrogram(d)
   }
   
   if(type=="average"){
@@ -82,7 +83,7 @@ dendsort <- function(d, isReverse=FALSE, type="min") {
   }
   
   #if input was a hclust object, convert it back to hclust
-  if(class(d)=="hclust"){
+  if(inherits(d, "hclust")){
     n = as.hclust(n)
   }
   
