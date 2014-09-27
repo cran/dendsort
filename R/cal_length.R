@@ -15,9 +15,10 @@
 #'
 #' @return output The length. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
+#' @export cal_length
+#' @aliases cal_length
 #' 
 #' @examples
 #' #generate sample data

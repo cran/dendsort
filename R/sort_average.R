@@ -11,9 +11,10 @@
 #'
 #' @return output A sorted dendrogram object. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
+#' @export sort_average
+#' @aliases sort_average
 #' 
 #' @examples
 #' #generate sample data

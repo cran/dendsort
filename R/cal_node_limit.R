@@ -10,9 +10,10 @@
 #' 
 #' @return output A list of parameters. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
+#' @export cal_node_limit
+#' @aliases cal_node_limit
 #' 
 #' @examples
 #' #generate sample data

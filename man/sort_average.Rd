@@ -47,5 +47,5 @@ text(x, y, labels=as.character(1:10), cex=0.9)
 plot(hc,main="before sorting", xlab="", sub="")
 plot(hc_sorted, main="after sorting", xlab="", sub="")
 }
-\keyword{dendrogram}
+\keyword{internal}
 

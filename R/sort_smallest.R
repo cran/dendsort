@@ -10,10 +10,11 @@
 #'
 #' @return output A sorted dendrogram object. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
-#' 
+#' @export sort_smallest
+#' @aliases sort_smallest
+#'  
 #' @examples
 #' #generate sample data
 #' set.seed(1234); par(mar=c(0,0,0,0))

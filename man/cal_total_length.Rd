@@ -29,5 +29,5 @@ hc <- hclust(distxy)
 
 total_length <- cal_total_length(as.dendrogram(hc))
 }
-\keyword{dendrogram}
+\keyword{internal}
 

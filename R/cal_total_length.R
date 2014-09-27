@@ -8,9 +8,10 @@
 #'
 #' @return output The total length. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
+#' @export cal_total_length
+#' @aliases cal_total_length
 #' 
 #' @examples
 #' #generate sample data

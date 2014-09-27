@@ -1,4 +1,4 @@
-#' Sorting and reordering dendrogram nodes.
+#' Sorting and reordering dendrogram nodes
 #' 
 #' \code{dendsort} sorts a dendrogram object which is 
 #' typically  a result of hierarchical clustering (hclust). The 
@@ -17,7 +17,8 @@
 #'
 #' @keywords dendrogram 
 #'
-#' @export
+#' @export densort
+#' @aliases dendsort
 #' 
 #' @examples
 #' #generate sample data

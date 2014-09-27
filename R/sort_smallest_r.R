@@ -10,9 +10,10 @@
 #'
 #' @return output A sorted dendrogram object. 
 #'
-#' @keywords dendrogram 
+#' @keywords internal 
 #'
-#' @export
+#' @export sort_smallest_r
+#' @aliases sort_smallest_r
 #' 
 #' @examples
 #' #generate sample data
