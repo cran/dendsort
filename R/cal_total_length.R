@@ -1,4 +1,4 @@
-#' Calculate the total length of lines to draw the dendrogram.
+#' Calculate the total length of lines to draw the dendrogram
 #' 
 #' \code{cal_total_length} is a code modified from plot.dendrogram()
 #' to calculate the total length of lines to draw a dendrogram. This

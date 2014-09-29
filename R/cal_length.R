@@ -1,4 +1,4 @@
-#' Recursive function to calculate the length of branches.
+#' Recursive function to calculate the length of branches
 #' 
 #' \code{cal_length} is a code modified from plotNode()
 #' to calculate the length of lines to draw the branch of a dendrogram. This

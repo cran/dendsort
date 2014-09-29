@@ -1,4 +1,4 @@
-#' Sorting and reordering dendrogram nodes by the smallest value.
+#' Sorting and reordering dendrogram nodes by the smallest value in reverse
 #' 
 #' \code{sort_smallest_r} sorts a dendrogram object in reverse
 #' based on the smallest distance in its subtrees, recursively. 

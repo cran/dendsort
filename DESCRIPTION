@@ -1,8 +1,8 @@
 Package: dendsort
 Type: Package
-Title: Modular Leaf Orering Methods for Dendrogram Nodes
-Version: 0.3.1
-Date: 2014-09-25
+Title: Modular Leaf Ordering Methods for Dendrogram Nodes
+Version: 0.3.2
+Date: 2014-09-29
 Author: Ryo Sakai
 Maintainer: Ryo Sakai <ryo.sakai@esat.kuleuven.be>
 Description: This package includes functions to optimize ordering of nodes in a dendrogram,
@@ -17,7 +17,7 @@ URL: https://bitbucket.org/biovizleuven/dendsort/,
         http://f1000research.com/articles/3-177/v1
 Suggests: knitr, RColorBrewer, gplots, heatmap.plus, seriation
 VignetteBuilder: knitr
-Packaged: 2014-09-26 10:39:13 UTC; Ryo
+Packaged: 2014-09-29 18:45:16 UTC; Ryo
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-09-27 18:19:04
+Date/Publication: 2014-09-29 22:58:47

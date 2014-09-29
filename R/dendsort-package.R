@@ -1,4 +1,4 @@
-#' Modular Leaf Orering Methods for Dendrogram Nodes
+#' Modular Leaf Ordering Methods for Dendrogram Nodes
 #'
 #' This package includes functions to optimize ordering of nodes in a dendrogram, without affecting the meaning of the dendrogram. 
 #' A dendrogram can be sorted based on the average distance of subtrees, or based on the smallest distance value. These sorting 
@@ -10,7 +10,7 @@
 #' @name dendsort-package
 #' @aliases dendsort-package
 #' @docType package
-#' @title Modular Leaf Orering Methods for Dendrogram Nodes.
+#' @title Modular Leaf Ordering Methods for Dendrogram Nodes
 #' @author Ryo Sakai \email{ryo.sakai@@esat.kuleuven.be}
 #' @keywords package
 NULL

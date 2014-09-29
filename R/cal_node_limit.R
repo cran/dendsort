@@ -1,4 +1,4 @@
-#' Calculate the x coordinates given a branch of dendrogram.
+#' Calculate the x coordinates given a branch of dendrogram
 #' 
 #' \code{cal_node_limit} is a code modified from plotNodeLimit()
 #' to x coordinates of branches given a branch of dendrogram.

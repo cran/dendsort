@@ -1,4 +1,4 @@
-#' Sorting and reordering dendrogram nodes by average distances.
+#' Sorting and reordering dendrogram nodes by average distances
 #' 
 #' \code{sort_average} sorts a dendrogram object based on 
 #' the average distance of its subtrees, recursively. 
