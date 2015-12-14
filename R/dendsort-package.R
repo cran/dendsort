@@ -11,7 +11,8 @@
 #' @aliases dendsort-package
 #' @docType package
 #' @title Modular Leaf Ordering Methods for Dendrogram Nodes
-#' @author Ryo Sakai \email{ryo.sakai@@esat.kuleuven.be}
+#' @importFrom stats as.dendrogram as.hclust is.leaf
+#' @author Ryo Sakai \email{ryo.sakai@esat.kuleuven.be}
 #' @keywords package
 NULL
 

@@ -12,12 +12,9 @@
 #' @param d a dendrogram or hclust object.\code{d}
 #' @param isReverse logical indicating if the order should be reversed.Defaults to FALSE\code{isReverse}
 #' @param type character indicating the type of sorting. Default to "min" \code{type}
-#'
 #' @return output A sorted dendrogram or hclust. 
-#'
 #' @keywords dendrogram 
-#'
-#' @export densort
+#' @export dendsort
 #' @aliases dendsort
 #' 
 #' @examples
@@ -51,18 +48,16 @@
 
 dendsort <- function(d, isReverse=FALSE, type="min") {
   if(!inherits(d, "dendrogram") && !inherits(d, "hclust")){
-  #if(class(d)!="dendrogram" && class(d)!= "hclust"){
     stop("d variable must be a dendrogram or hclust object")
   }
-  #type string to lower case
-  type = tolower(type)
-
+  
   #assign dendrogram
   dend = d
   if(inherits(d, "hclust")){
    dend = as.dendrogram(d)
   }
-  
+  #type string to lower case
+  type = tolower(type)
   if(type=="average"){
     #sort by average distance
     if(isReverse){
@@ -82,7 +77,6 @@ dendsort <- function(d, isReverse=FALSE, type="min") {
   }else{
     stop("unrecognized type variable "+type)
   }
-  
   #if input was a hclust object, convert it back to hclust
   if(inherits(d, "hclust")){
     n = as.hclust(n)

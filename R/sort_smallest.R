@@ -7,11 +7,8 @@
 #' placed on the right side.
 #'
 #' @param d A dendrogram object.\code{d}
-#'
 #' @return output A sorted dendrogram object. 
-#'
 #' @keywords internal 
-#'
 #' @export sort_smallest
 #' @aliases sort_smallest
 #'  
